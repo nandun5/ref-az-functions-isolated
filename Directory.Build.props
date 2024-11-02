@@ -1,0 +1,32 @@
+<Project>
+  <PropertyGroup Label="Runtime SDK">
+    <DefaultNetCoreTargetFramework>net8.0</DefaultNetCoreTargetFramework>
+    <IsTestProject>$(MSBuildProjectName.Contains('.Tests'))</IsTestProject>
+    <GenerateDocumentationFile Condition="'$(IsTestProject)' != 'true'">true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+    <RootNamespace>Nandun.Reference.WorkerFunction</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(IsTestProject)' == 'true'">
+    <!--HINT: Overriding because mstest classes initialize non nullable members setup method, rather than ctor-->
+    <Nullable>disable</Nullable>
+    <RunSettingsFilePath>$(SolutionDir)\test.runsettings</RunSettingsFilePath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(IsTestProject)' != 'true'">
+    <InternalsVisibleTo Include="$(MSBuildProjectName).Tests" />
+  </ItemGroup>
+
+  <PropertyGroup Label="General Info">
+    <Authors>$(Company)</Authors>
+    <Company>Company Name Inc.</Company>
+    <Copyright>Copyright © $([System.DateTime]::Now.ToString('yyyy')) $(Company)</Copyright>
+    <RepositoryUrl>https://github.com/nandun5/ref-az-functions-isolated.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>

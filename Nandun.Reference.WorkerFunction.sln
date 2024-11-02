@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".git", ".git", "{3748F4F8-B460-471F-8242-4A71283E7C12}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vs", ".vs", "{DE47F08A-1623-4A83-8891-45ED668EF9FE}"
+	ProjectSection(SolutionItems) = preProject
+		Nandun.Reference.WorkerFunction.sln.DotSettings = Nandun.Reference.WorkerFunction.sln.DotSettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{05860526-6F68-4E39-A32A-F4FBC62127AC}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		nuget.config = nuget.config
+		test.runsettings = test.runsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".azure", ".azure", "{63B5569B-B419-4CF8-9305-3BFE9D7873E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{652935ED-76D8-4AA7-BF19-CC3546B48C51}"
+	ProjectSection(SolutionItems) = preProject
+		.azure\pipelines\ci.yml = .azure\pipelines\ci.yml
+		.azure\pipelines\rm.yml = .azure\pipelines\rm.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{218F30C9-1D0C-4201-9F38-F13B807A97AF}"
+	ProjectSection(SolutionItems) = preProject
+		.azure\templates\Param.ApiManagement.dev.json = .azure\templates\Param.ApiManagement.dev.json
+		.azure\templates\Param.ApiManagement.prod.json = .azure\templates\Param.ApiManagement.prod.json
+		.azure\templates\Param.ApiManagement.qa.json = .azure\templates\Param.ApiManagement.qa.json
+		.azure\templates\Param.Functions.dev.json = .azure\templates\Param.Functions.dev.json
+		.azure\templates\Param.Functions.prod.json = .azure\templates\Param.Functions.prod.json
+		.azure\templates\Param.Functions.qa.json = .azure\templates\Param.Functions.qa.json
+		.azure\templates\Resource.ApiManagement.json = .azure\templates\Resource.ApiManagement.json
+		.azure\templates\Resource.Functions.json = .azure\templates\Resource.Functions.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{0CC78EFB-572B-44F7-9F3D-BD881DBAFC27}"
+	ProjectSection(SolutionItems) = preProject
+		.azure\pipelines\build\build-ci.yml = .azure\pipelines\build\build-ci.yml
+		.azure\pipelines\build\build-rm.yml = .azure\pipelines\build\build-rm.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{F125A21D-6888-4F89-9C66-EB7DF3A29A13}"
+	ProjectSection(SolutionItems) = preProject
+		.azure\pipelines\deploy\deploy-rm.yml = .azure\pipelines\deploy\deploy-rm.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".pr", ".pr", "{4C32F90F-6B64-4925-812D-D2A55583D055}"
+	ProjectSection(SolutionItems) = preProject
+		.azuredevops\pull_request_template.md = .azuredevops\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{52A9E989-0C5D-4EA4-A738-2F8E59832EA5}"
+	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nandun.Reference.WorkerFunction.App", "Nandun.Reference.WorkerFunction.App\Nandun.Reference.WorkerFunction.App.csproj", "{B7AAFF3B-4B4B-4168-BDBC-61BFF6752FD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nandun.Reference.WorkerFunction.App.Tests", "Nandun.Reference.WorkerFunction.App.Tests\Nandun.Reference.WorkerFunction.App.Tests.csproj", "{6B15B758-5D71-4D1F-9B61-EA6357AA93E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nandun.Reference.Messaging", "Nandun.Reference.Messaging\Nandun.Reference.Messaging.csproj", "{C697224D-9A33-4CBC-838D-10617C288EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7AAFF3B-4B4B-4168-BDBC-61BFF6752FD9}.Debug|x64.ActiveCfg = Debug|x64
+		{B7AAFF3B-4B4B-4168-BDBC-61BFF6752FD9}.Debug|x64.Build.0 = Debug|x64
+		{B7AAFF3B-4B4B-4168-BDBC-61BFF6752FD9}.Release|x64.ActiveCfg = Release|x64
+		{B7AAFF3B-4B4B-4168-BDBC-61BFF6752FD9}.Release|x64.Build.0 = Release|x64
+		{6B15B758-5D71-4D1F-9B61-EA6357AA93E6}.Debug|x64.ActiveCfg = Debug|x64
+		{6B15B758-5D71-4D1F-9B61-EA6357AA93E6}.Debug|x64.Build.0 = Debug|x64
+		{6B15B758-5D71-4D1F-9B61-EA6357AA93E6}.Release|x64.ActiveCfg = Release|x64
+		{6B15B758-5D71-4D1F-9B61-EA6357AA93E6}.Release|x64.Build.0 = Release|x64
+		{C697224D-9A33-4CBC-838D-10617C288EFB}.Debug|x64.ActiveCfg = Debug|x64
+		{C697224D-9A33-4CBC-838D-10617C288EFB}.Debug|x64.Build.0 = Debug|x64
+		{C697224D-9A33-4CBC-838D-10617C288EFB}.Release|x64.ActiveCfg = Release|x64
+		{C697224D-9A33-4CBC-838D-10617C288EFB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{652935ED-76D8-4AA7-BF19-CC3546B48C51} = {63B5569B-B419-4CF8-9305-3BFE9D7873E8}
+		{218F30C9-1D0C-4201-9F38-F13B807A97AF} = {63B5569B-B419-4CF8-9305-3BFE9D7873E8}
+		{0CC78EFB-572B-44F7-9F3D-BD881DBAFC27} = {652935ED-76D8-4AA7-BF19-CC3546B48C51}
+		{F125A21D-6888-4F89-9C66-EB7DF3A29A13} = {652935ED-76D8-4AA7-BF19-CC3546B48C51}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97AD12A1-009C-4BBF-B1CB-82340E273608}
+	EndGlobalSection
+EndGlobal
